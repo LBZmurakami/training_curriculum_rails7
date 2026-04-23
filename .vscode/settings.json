@@ -1,0 +1,8 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "/^cd \\\\\\\\wsl\\.localhost\\\\Ubuntu\\\\home\\\\murakamiko\\\\projects\\\\training_curriculum_rails7 ; python - <<'PY'\nfrom pathlib import Path\np = Path\\('app/views/calendars/index\\.html\\.erb'\\)\ntext = p\\.read_text\\(encoding='utf-8', errors='replace'\\)\nprint\\(repr\\(text\\)\\)\nPY$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
+}
