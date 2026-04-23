@@ -6,40 +6,46 @@ body {
 }
 
 .calendar {
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   margin-top: 15vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .item {
-  margin: 0.5vw;
-  border: medium solid rgb(0, 0, 0);
-  width: 12vw;
-  height: auto;
+  flex: 0 1 14rem;
+  min-width: 14rem;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 0.5rem;
   background-color: rgb(246, 253, 255);
+  box-sizing: border-box;
 }
 
 .date {
-  height: 5vh;
+  min-height: 5vh;
   display: flex;
-  font-size: 3vh;
+  font-size: 2rem;
   align-items: center;
   justify-content: center;
-  border-bottom: medium solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  padding: 0.75rem 0.5rem;
 }
 
 .content {
-  min-height: 25vh;
-  padding: 5px;
-  white-space: nowrap;
-  overflow: scroll;
+  min-height: 22vh;
+  padding: 0.75rem 0.75rem 1rem;
+  white-space: normal;
+  overflow-y: auto;
 }
 
 .plan-list {
-  margin: 1vh 0;
+  margin: 0.75rem 0;
 }
 
 .form {
@@ -47,21 +53,25 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 15vh;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .label {
-  font-size: 3vh;
+  font-size: 1.2rem;
   color: rgb(255, 255, 255);
 }
 
 .text-input {
   height: 4vh;
   width: 15vw;
+  min-width: 200px;
   margin: 0 2vw;
 }
 
 .date-select {
   height: 4vh;
   width: 13vw;
+  min-width: 180px;
   margin: 0 2vw;
 }
